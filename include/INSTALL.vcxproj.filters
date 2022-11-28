@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Gido\Projects\XYZEngine\XYZEngine\vendor\OpenXR-SDK\CMakeFiles\488dec1c5271161d0934204a4cec6e30\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B8C9E169-C940-3339-B315-917BEE494E48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

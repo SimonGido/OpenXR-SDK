@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.25/Modules/GNUInstallDirs.cmake
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/include/openxr/CMakeLists.txt
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/include/openxr/openxr_platform_defines.h

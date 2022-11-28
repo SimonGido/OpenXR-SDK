@@ -1,0 +1,11 @@
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/CMakeFiles/uninstall.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/CMakeFiles/INSTALL.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/CMakeFiles/ALL_BUILD.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/include/CMakeFiles/INSTALL.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/include/openxr/CMakeFiles/generate_openxr_header.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/include/openxr/CMakeFiles/INSTALL.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/src/CMakeFiles/xr_global_generated_files.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/src/CMakeFiles/INSTALL.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/src/loader/CMakeFiles/openxr_loader.dir
+C:/Users/Gido/Projects/XYZEngine/XYZEngine/vendor/OpenXR-SDK/src/loader/CMakeFiles/INSTALL.dir
