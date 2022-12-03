@@ -1,6 +1,8 @@
 #ifndef OPENXR_PLATFORM_H_
 #define OPENXR_PLATFORM_H_ 1
 
+#include <vulkan/vulkan.h>
+
 /*
 ** Copyright 2017-2022 The Khronos Group Inc.
 **
@@ -61,6 +63,7 @@ XRAPI_ATTR XrResult XRAPI_CALL xrCreateSwapchainAndroidSurfaceKHR(
 #endif /* XR_EXTENSION_PROTOTYPES */
 #endif /* !XR_NO_PROTOTYPES */
 #endif /* XR_USE_PLATFORM_ANDROID */
+
 
 #ifdef XR_USE_PLATFORM_ANDROID
 

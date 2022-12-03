@@ -7,11 +7,6 @@ project "OpenXR-SDK"
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 
-    includedirs
-    {
-        "include"
-    }
-
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
