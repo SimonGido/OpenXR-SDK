@@ -6,17 +6,52 @@ project "OpenXR-SDK"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    files
+    {
+        "src/external/jsoncpp/include/json/**.h",
+        "src/external/jsoncpp/src/lib_json/**.h",
+        "src/external/jsoncpp/src/lib_json/**.cpp",
+
+        "src/common/**.h",
+        "src/common/**.hpp",
+        "src/common/**.c",
+        "src/common/**.cpp",
+        
+        "include/**.h",
+        
+        "src/*.h",
+        "src/*.hpp",
+        "src/*.c",
+        "src/*.cpp",
+
+        "src/loader/**.h",
+        "src/loader/**.hpp",
+        "src/loader/**.c",
+        "src/loader/**.cpp"
+    }
+    includedirs
+    {
+        "include",
+        "include/openxr",
+        "src",
+        "src/common",
+        "src/external/jsoncpp/include",
+        "%{IncludeDir.VulkanSDK}"
+    }
 
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "Off"
         
-        prebuildcommands
+        defines
         {
-            'cmake -G "Visual Studio 17 2022" -A x64'
+            "XR_OS_WINDOWS",
+            "XR_USE_PLATFORM_WIN32",
+            "XR_USE_GRAPHICS_API_VULKAN",
+            "_WINDOWS"
         }
-    
+
 
 	filter "system:linux"
 		pic "On"
@@ -28,23 +63,7 @@ project "OpenXR-SDK"
 		runtime "Debug"
 		symbols "on"
 
-        prebuildcommands
-        {
-            "msbuild OPENXR.sln /property:Configuration=Debug"
-        }
-        links
-        {
-            "src/loader/Debug/openxr_loaderd.lib"
-        }
 
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
-        prebuildcommands
-        {
-            "msbuild OPENXR.sln /property:Configuration=Release"
-        }
-        links
-        {
-            "src/loader/Release/openxr_loader.lib"
-        }

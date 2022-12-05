@@ -1,8 +1,6 @@
 #ifndef OPENXR_PLATFORM_H_
 #define OPENXR_PLATFORM_H_ 1
 
-#include <vulkan/vulkan.h>
-
 /*
 ** Copyright 2017-2022 The Khronos Group Inc.
 **
@@ -15,6 +13,7 @@
 */
 
 #include "openxr.h"
+#include "../../src/common/xr_dependencies.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -47,7 +46,6 @@ XRAPI_ATTR XrResult XRAPI_CALL xrSetAndroidApplicationThreadKHR(
 #endif /* XR_USE_PLATFORM_ANDROID */
 
 #ifdef XR_USE_PLATFORM_ANDROID
-
 #define XR_KHR_android_surface_swapchain 1
 #define XR_KHR_android_surface_swapchain_SPEC_VERSION 4
 #define XR_KHR_ANDROID_SURFACE_SWAPCHAIN_EXTENSION_NAME "XR_KHR_android_surface_swapchain"
