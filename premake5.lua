@@ -39,6 +39,12 @@ project "OpenXR-SDK"
         "%{IncludeDir.VulkanSDK}"
     }
 
+    links
+    {
+        "%{Library.Vulkan}",
+		"%{Library.VulkanUtils}"
+    }
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
